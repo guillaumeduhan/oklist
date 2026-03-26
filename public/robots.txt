@@ -1,0 +1,8 @@
+# robots.txt — OkList
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_astro/
+
+# Sitemap
+Sitemap: https://oklist.co/sitemap.xml

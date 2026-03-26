@@ -1,0 +1,89 @@
+---
+import "../globals.css";
+import Header from "../src/components/Header.astro";
+
+const title = "OkList — The awesome template to create your lists.";
+const description =
+  "OkList is the perfect template to create lists and directories. Launch your project in minutes with a modern, performant design.";
+const url = "https://oklist.co";
+const image = `${url}/og-image.jpg`;
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="list template, directory template, astro template, create lists, curated directory, startup tools, list builder, oklist"
+    />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={url} />
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href={url} />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="OkList" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "OkList",
+        "url": "https://oklist.co",
+        "description": "The awesome template to create your lists.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "OkList"
+        }
+      }
+    </script>
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#1c351c" />
+  </head>
+
+  <body class="relative grid fade-in-up-2">
+    <main class="max-w-2xl mx-auto">
+      <Header />
+      <slot />
+    </main>
+    <footer>
+      <div class="flex items-center justify-center py-8 fade-in-up-3">
+        <p class="text-neutral-500 text-sm">
+          Built with <a href="https://github.com" target="_blank" class="text-primary-500">OkList</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

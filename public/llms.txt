@@ -1,0 +1,21 @@
+# OkList
+
+> The awesome template to create your lists. Launch your directory in minutes.
+
+## About
+
+OkList is an open-source template to create lists and directories. Add your items to data.json and deploy.
+
+## Features
+
+- Ready-to-use template
+- data.json to manage your items
+- Promoted & Featured listings
+- Dark Mode
+- SEO-Friendly
+
+## Tech Stack
+
+- Built with Astro
+- Tailwind CSS v4
+- React

@@ -1,0 +1,11 @@
+---
+interface Props {
+  name?: string;
+}
+
+const { name = "OkList" } = Astro.props;
+---
+
+<a href="/" class="inline-flex items-center gap-2">
+  <img src="/logo.png" alt={name} width="39" height="39" class="rounded-lg" />
+</a>
